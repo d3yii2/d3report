@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "d3yii2\\d3report": ""
+            "d3yii2\\d3report\\": ""
         }
     }
 }
