@@ -1,4 +1,4 @@
-#Reports"
+#schedules"
 
 ## Features
 
@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-$ composer require d3yii2/d3report "*"
+$ composer require d3yii2/d3schedule "*"
 ```
 
 or add
 
 ```
-"d3yii2/d3report": "*"
+"d3yii2/d3schedule": "*"
 ```
 
 to the `require` section of your `composer.json` file.

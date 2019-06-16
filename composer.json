@@ -1,8 +1,9 @@
 {
-    "name": "d3yii2/d3report",
-    "description": "Reports",
+    "name": "d3yii2/d3schedule",
+    "description": "schedules",
     "type": "library",
-    "keywords": ["yii2"],
+    "keywords": ["yii2","Schedule"],
+    "license": "BSD-4-Clause",
     "authors": [
         {
             "name": "Uldis Nelsons",
@@ -14,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "d3yii2\\d3report\\": ""
+            "d3yii2\\d3schedule\\": ""
         }
     }
 }
