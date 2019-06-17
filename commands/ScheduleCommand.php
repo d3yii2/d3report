@@ -51,6 +51,11 @@ class ScheduleCommand extends Controller
         return Yii::$app->getDb();
     }
 
+    public function actionTest(string $param)
+    {
+        return ExitCode::OK;
+    }
+
     /**
      * output to terminal line
      * @param string $string output string

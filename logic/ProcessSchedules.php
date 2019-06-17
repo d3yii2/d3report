@@ -4,26 +4,22 @@ namespace d3yii2\d3schedule\logic;
 
 use d3yii2\d3schedule\models\ScheduleTask;
 use DateTime;
-use omnilight\scheduling\Schedule;
+
 use Yii;
 
-class CreateChedule
+class ProcessSchedules
 {
 
-    /** @var Schedule  */
-    public $schedule;
 
     /** @var DateTime */
     public $runTime;
 
     /**
      * CreateChedule constructor.
-     * @param Schedule $schedule
      * @param DateTime $runTime
      */
-    public function __construct(Schedule $schedule, DateTime $runTime)
+    public function __construct(DateTime $runTime)
     {
-        $this->schedule = $schedule;
         $this->runTime = $runTime;
     }
 
@@ -75,7 +71,7 @@ class CreateChedule
 
         if ($task->minute) {
             $minutes = explode(',', $task->minute);
-            $actualMinute = ltrim($this->runTime->format('m'), '0');
+            $actualMinute = ltrim($this->runTime->format('i'), '0');
             if (!in_array($actualMinute, $minutes, true)) {
                 return false;
             }
